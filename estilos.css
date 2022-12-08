@@ -279,6 +279,7 @@ button {
 
     .encabezado {
         justify-content: center;
+        width: 650px;
     }
     .encabezado nav {
         display: none;
@@ -306,10 +307,25 @@ button {
     .hamburguesa {
         display: block;
     }
+    .encabezado h2 {
+        font-size: 30px;
+    }
+    .piedepagina {
+        justify-content: center;
+    }
+    .pie { 
+        font-size: medium; 
+    }
+    .promociones {
+        justify-content: space-evenly;
+    }
 }
 
 @media (max-width:576px) {
     /* RESPONSIVE */
+    .encabezado {
+        width: 550px;
+    }
     .encabezado nav {
         display: none;
     }

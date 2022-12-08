@@ -202,9 +202,14 @@ ul .listacontacto {
     font-family: "Pacifico";
     padding: 5px;
     margin: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .doble {
     display: flex;
+    justify-content: center;
 }
 .formulariocontacto {
     font-family: "Pacifico";
@@ -279,7 +284,7 @@ button {
 
     .encabezado {
         justify-content: center;
-        width: 650px;
+        width: auto;
     }
     .encabezado nav {
         display: none;
@@ -319,12 +324,17 @@ button {
     .promociones {
         justify-content: space-evenly;
     }
+     /* REPONSIVE DE MODACIRCULAR */
+     .grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
 }
 
 @media (max-width:576px) {
     /* RESPONSIVE */
     .encabezado {
-        width: 550px;
+        width: 500px;
     }
     .encabezado nav {
         display: none;

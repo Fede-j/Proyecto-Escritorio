@@ -50,6 +50,7 @@ header {
 }
 .encabezado nav {
     display: flex;
+    animation: ease-in animacion 1.5s;
 }
 .encabezado nav a {
     text-decoration: none;
@@ -60,6 +61,7 @@ header {
 }
 .hamburguesa {
     display: none;
+    animation: ease-in animacion 1.5s;
 }
 a:hover {
     color: #404040;
@@ -67,6 +69,15 @@ a:hover {
 .encabezado img {
     width: 150px;
     border-radius: 60px;
+    animation: ease-in animacion 1.5s;
+}
+@keyframes animacion {
+    0% { 
+        transform: scale(0);
+    }
+    100% { 
+        transform: scale(1);
+    }
     
 }
 article img {
@@ -132,6 +143,19 @@ a.comprar {
     width: max-content;
     text-align: center;
     align-items: right;
+}
+/* ANIMACIONES EN TIENDA */
+.contenedor1 img:hover {
+    transform: scale(1.2);
+}
+.contenedor2 img:hover {
+    transform: scale(1.2);
+}
+.contenedor1 img{
+    transition: ease-in 0.8s;
+}
+.contenedor2 img{
+    transition: ease-in 0.8s;
 }
 .lista1 {
     padding-top: 100px;
@@ -258,12 +282,23 @@ button {
     height: 400px;
     margin: 20px;
 }
+/* Animacion a MODACIRCULAR */
+.grid img:hover {
+    transform: scale(1.5);
+
+}
+/* FIN */
 .podcast {
     display: flex;
     justify-content: center;
     width: 400px;
     height: 400px;
     margin: 20px;
+}
+.podcast:hover {
+    transform: scale(1.5);
+
+
 }
 
 /* GRID EN PESTAÑA MODA CIRCULAR, */
